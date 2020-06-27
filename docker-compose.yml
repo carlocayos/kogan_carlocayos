@@ -1,0 +1,8 @@
+version: '2.1'
+
+services:
+  myapp:
+    image: "kogan_carlocayos:latest"
+    entrypoint: /bin/sh -c "/go/bin/app /conf/config.properties"
+    volumes:
+      - ./conf:/conf
